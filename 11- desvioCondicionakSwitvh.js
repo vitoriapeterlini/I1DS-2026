@@ -9,18 +9,18 @@
 let menuSelecionado = "Home";
 switch (menuSelecionado) {
 case "Home":
-        console.log("Voce cliclou no link 'Home'");
+        console.log("Voce clicou no link 'Home'");
         break;
 case "Quem somos":
-    console.log("Voce cliclou no link 'Quem somos'");
+    console.log("Voce clicou no link 'Quem somos'");
     break;
 case "Contato":
     console.log("Voce clicou no link 'Contato'");
     break;
-case "Redes sociais"
+case "Redes sociais":
     console.log("Voce clicou no link 'Redes sociais'");
-    break
-case "Pague um café"
+    break;
+case "Pague um café":
      console.log("Voce clicou no link 'Pague um café'");
      break; 
 
