@@ -53,3 +53,4 @@ function situação (nota) {
  }
  let nota = 7;
  console.log("nota", nota, "-", situação(nota));
+ 
