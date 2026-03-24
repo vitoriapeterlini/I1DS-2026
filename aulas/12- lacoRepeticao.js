@@ -1,8 +1,42 @@
-//      laço de repetição - FOR(PARA)
-//  O professor te colocou de castigo e pediu pra voce escrever mil vezes a frase
-// "Eu vou prestar atenção as aulas e anotar tudo!"
+// Laço de repeteção . FOR (PARA)
+// O professor te colocou de castigo e pediu para voce escrever mil vezes a frase
+// "Eu vou prestar atenção às aulas e anotar tudo!"
 
-for (let i = 0; i < 1000; i++) { // i++ == i = i+1 
-    const element = array[i];
-    
+//, i++ == i = 1+1
+// let 1 = 0 => primeiro utilizo uma variavel de controle
+//i++ => aumenta a variavel de controle para não trazer e somar
+for (let i = 0; i < 1000; i++) {
+console.log("Eu vou prestar atenção às aulas e anotar tudo ");
 }
+console.log("---------------------------------")
+
+
+// Escreva todos os números de 1 a 20
+for (let i = 1; i <= 20; i++) {
+    console.log (i);
+}
+
+// Escreva todos os números pares entre 1 e 20
+for (let i = 0; i <= 20; i += 2) {
+    console.log(i);
+}
+console.log("---------------------------------");
+
+// Outra solução de números pares
+for (let i = 1; i < 20; i++) {
+    if (i % 2 == 0)console.log(i);
+// % => resto da Divisão
+// 1 % 2 == 0 => O resto da divisão de 1 por 2 for 0, ele mostra 1
+}
+
+// Dado um vetor, calcule e exiba o somatório de seus elementos 
+var numeros = [ 5,6,8,14,0,6,9,7,2 ];
+let soma = 0;
+
+console.log(numeros.length)
+    // numeros.length => Mostra a quantidade do itens do array
+    for (let i = 0; i < numeros.length; i++) {
+        soma += numeros[i];
+    }
+
+    console.log(soma);
