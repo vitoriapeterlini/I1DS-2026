@@ -44,3 +44,64 @@ let Altura = 4;
 let volume = calcularVolume(Comprimento, Largura, Altura);
 console.log("Volume do paralelepípedo:", volume);
 
+console.log("----------------------------------------------");
+
+let valor = 100;
+let desconto = 10 / 100;
+
+console.log(
+  "O valor do produto com o desconto foi:",
+  valor - valor * desconto,
+  "Reias",
+);
+
+console.log("--------------------------------------------------");
+
+
+function converterCelsiusParaFahrenheit(celsius) {
+  let fahrenheit = celsius * 1.8 + 32;
+  return fahrenheit;
+}
+
+let temperaturaC = 25;
+let temperaturaF = converterCelsiusParaFahrenheit(temperaturaC);
+
+console.log(`${temperaturaC}°C é igual a ${temperaturaF}°F`);
+
+console.log("--------------------------------------------------");
+
+
+let peso = 67;
+let ALtura = 167;
+
+console.log("O IMC será", peso / (ALtura * ALtura));
+
+console.log("--------------------------------------------------");
+
+
+function final(n1, n2, n3) {
+  let media = (n1 + n2 + n3) / 3;
+  let situacao;
+
+  if (media < 5) situacao = "Recuperação";
+  else if (media < 7) situacao = "Recuperação";
+  else situacao = "Aprovado";
+
+  return "Média: " + media + " - situação: " + situacao;
+}
+console.log(final(7, 8, 6));
+
+console.log("--------------------------------------------");
+
+
+let a = 2;
+let b = 3;
+let c = -5;
+
+let delta = Math.pow(b, 2) - 4 * a * c;
+
+console.log("O valor de Delta é: " + delta);
+
+ console.log("--------------------------------------------")
+
+ let horas = 1
