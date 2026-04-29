@@ -1,23 +1,30 @@
 
 
+let userCount = 0;
+
 const cadastrar = (event) => {
-  // Parar a propagação padrão do evento
   event.preventDefault();
-  // Capturar os valores do elementos por Id
+
   let nome = document.getElementById("nome").value;
   let email = document.getElementById("email").value;
-  // Capturando o elemento de lista por Id
   let lista = document.getElementById("lista");
 
-  userCount ++;
-  let id = "userCount";
-  // Criar um novo elemento <li>Nome - Email</li>
+  userCount++;
+  let id = userCount;
+
   let novoItem = document.createElement("li");
-  novoItem.innerText = nome + " - " + email;
-  // Adicionar o novo item na lista ja existente
+
+  novoItem.innerHTML =
+    id + " - " + nome + " - " + email +
+    ' <button onclick="editar(this)">Editar</button>' +
+    ' <button onclick="deletar(this)">Deletar</button>';
+
   lista.appendChild(novoItem);
 
-  // Limpar os campos
+  atualizarContador();
+
+  // limpar campos 
   document.getElementById("nome").value = "";
   document.getElementById("email").value = "";
+
 };
